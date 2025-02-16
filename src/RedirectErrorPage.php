@@ -15,7 +15,7 @@ class RedirectErrorPage implements MiddlewareInterface
      */
     private $url;
 
-    public function __construct(String $url = null) {
+    public function __construct(String|null $url = null) {
         $this->url = $url ?? '/500';
     }
 
